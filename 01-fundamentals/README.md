@@ -301,3 +301,139 @@ console.log(Boolean([]));      // true
 **Day 2 goal:** Understand operators and type conversion, write your own examples, run them, and commit your work to GitHub.
 
 **Next topics:** Conditional Statements and Control Flow.
+
+---
+
+# JavaScript Fundamentals — Day 3
+
+**Topics:** Conditional Statements and Control Flow
+
+## 1. The `if` statement
+
+The `if` statement executes code when a condition is true.
+
+```javascript
+const age = 20;
+
+if (age >= 18) {
+    console.log("You are eligible to vote.");
+}
+```
+
+## 2. The `if...else` statement
+
+The `else` block executes when the `if` condition is false.
+
+```javascript
+const age = 16;
+
+if (age >= 18) {
+    console.log("Eligible to vote");
+} else {
+    console.log("Not eligible to vote");
+}
+```
+
+## 3. The `else if` statement
+
+Use `else if` when you need to check multiple conditions.
+
+```javascript
+const marks = 85;
+
+if (marks >= 90) {
+    console.log("Grade A");
+} else if (marks >= 75) {
+    console.log("Grade B");
+} else if (marks >= 50) {
+    console.log("Grade C");
+} else {
+    console.log("Fail");
+}
+```
+
+Output: `Grade B`
+
+JavaScript checks conditions from top to bottom and executes the first matching branch.
+
+## 4. Nested `if` statements
+
+An `if` statement can be placed inside another `if` statement.
+
+```javascript
+const age = 20;
+const hasId = true;
+
+if (age >= 18) {
+    if (hasId) {
+        console.log("Entry allowed");
+    } else {
+        console.log("ID required");
+    }
+} else {
+    console.log("You are under 18");
+}
+```
+
+## 5. The `switch` statement
+
+A `switch` statement compares an expression against several `case` values.
+
+```javascript
+const day = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    default:
+        console.log("Invalid day");
+}
+```
+
+Output: `Wednesday`
+
+- `case` specifies a value to match.
+- `break` exits the switch statement.
+- `default` runs when no case matches.
+
+## 6. The ternary operator
+
+The ternary operator is a short way to choose between two expressions.
+
+Syntax:
+
+```javascript
+condition ? valueIfTrue : valueIfFalse;
+```
+
+Example:
+
+```javascript
+const age = 20;
+
+const result = age >= 18 ? "Adult" : "Minor";
+
+console.log(result);
+```
+
+Output: `Adult`
+
+## 7. Practice exercises
+
+1. Check whether a number is positive, negative, or zero.
+2. Check whether a person is eligible to vote.
+3. Assign a grade based on marks.
+4. Print the weekday using a `switch` statement.
+5. Check whether a number is even or odd.
+6. Use the ternary operator to determine whether a person is an adult or a minor.
+
+**Day 3 goal:** Understand conditional statements and write programs that make decisions.
+
+**Next topic:** Loops — `for`, `while`, and `do...while`.
