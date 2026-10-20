@@ -437,3 +437,113 @@ Output: `Adult`
 **Day 3 goal:** Understand conditional statements and write programs that make decisions.
 
 **Next topic:** Loops — `for`, `while`, and `do...while`.
+
+---
+
+# JavaScript Fundamentals — Day 4
+
+**Topic:** Loops
+
+## 1. What is a loop?
+
+A loop repeats a block of code until a condition is no longer satisfied or the loop is stopped.
+
+## 2. The `for` loop
+
+A `for` loop is useful when you know how many times you want to repeat something.
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+```
+
+Output:
+
+```text
+1
+2
+3
+4
+5
+```
+
+The three parts are:
+
+- Initialization: `let i = 1`
+- Condition: `i <= 5`
+- Update: `i++`
+
+## 3. The `while` loop
+
+A `while` loop repeats as long as its condition is true.
+
+```javascript
+let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
+```
+
+Make sure the condition eventually becomes false to avoid an infinite loop.
+
+## 4. The `do...while` loop
+
+A `do...while` loop executes its body at least once, then checks the condition.
+
+```javascript
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+```
+
+## 5. The `break` statement
+
+`break` immediately exits the loop.
+
+```javascript
+for (let i = 1; i <= 10; i++) {
+    if (i === 5) {
+        break;
+    }
+
+    console.log(i);
+}
+```
+
+Output: `1 2 3 4`
+
+## 6. The `continue` statement
+
+`continue` skips the rest of the current iteration and moves to the next one.
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        continue;
+    }
+
+    console.log(i);
+}
+```
+
+Output: `1 2 4 5`
+
+## 7. Practice exercises
+
+1. Print numbers from 1 to 10 using a `for` loop.
+2. Print even numbers from 2 to 20.
+3. Calculate the sum of numbers from 1 to 100.
+4. Print the multiplication table of a number.
+5. Use a `while` loop to print numbers from 10 down to 1.
+6. Use `break` to stop a loop at 7.
+7. Use `continue` to skip the number 5.
+
+**Day 4 goal:** Understand loops and write programs that repeat tasks efficiently.
+
+**Next topic:** Functions and Methods.
