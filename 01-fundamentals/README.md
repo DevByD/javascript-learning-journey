@@ -547,3 +547,87 @@ Output: `1 2 4 5`
 **Day 4 goal:** Understand loops and write programs that repeat tasks efficiently.
 
 **Next topic:** Functions and Methods.
+
+# Day 5 — Functions in JavaScript
+
+## What is a Function?
+
+A function is a reusable block of code designed to perform a specific task. We can call it whenever required instead of writing the same code repeatedly.
+
+## 1. Function Declaration
+
+A function declaration defines a function using the `function` keyword.
+
+```javascript
+function greet() {
+    console.log("Hello, JavaScript!");
+}
+
+greet();
+```
+
+## 2. Parameters and Arguments
+
+- **Parameters:** Variables listed in the function definition.
+- **Arguments:** Actual values passed when calling the function.
+
+```javascript
+function greetUser(name) {
+    console.log("Hello, " + name);
+}
+
+greetUser("Dharesh");
+```
+
+## 3. Return Values
+
+The `return` statement sends a value back to the caller.
+
+```javascript
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(10, 20));
+```
+
+## 4. Function Expressions
+
+A function expression stores a function in a variable.
+
+```javascript
+const multiply = function(a, b) {
+    return a * b;
+};
+
+console.log(multiply(4, 5));
+```
+
+## 5. Arrow Functions
+
+Arrow functions use the `=>` syntax.
+
+```javascript
+const subtract = (a, b) => {
+    return a - b;
+};
+
+console.log(subtract(10, 4));
+```
+
+For a single expression, an implicit return can be used:
+
+```javascript
+const square = number => number * number;
+
+console.log(square(5));
+```
+
+## Key Takeaways
+
+- Functions help reuse code.
+- Parameters receive input values.
+- Arguments are the values passed to functions.
+- `return` provides a result to the caller.
+- Function expressions store functions in variables.
+- Arrow functions provide concise syntax.
