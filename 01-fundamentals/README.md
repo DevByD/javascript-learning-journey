@@ -631,3 +631,41 @@ console.log(square(5));
 - `return` provides a result to the caller.
 - Function expressions store functions in variables.
 - Arrow functions provide concise syntax.
+
+# Day 6 — Arrays and Array Methods
+
+## 1. Arrays
+
+An array stores multiple values in a single variable.
+
+```javascript
+const fruits = ["Apple", "Banana", "Mango"];
+```
+
+- Array indexing starts at `0`.
+- `length` returns the number of elements.
+- Elements can be accessed using their indexes.
+- Elements in a `const` array can be updated, but the array variable cannot be reassigned.
+
+## 2. Array Methods
+
+- `push()`: adds an element to the end.
+- `pop()`: removes the last element.
+- `unshift()`: adds an element to the beginning.
+- `shift()`: removes the first element.
+- `includes()`: checks whether a value exists.
+- `indexOf()`: returns the index of a value, or `-1` if it is absent.
+- `slice()`: returns a selected portion without modifying the original array.
+- `splice()`: adds, removes, or replaces elements in the original array.
+
+## 3. Iterating Through Arrays
+
+Use a `for` loop or `for...of` loop to process array elements.
+
+## Key Takeaways
+
+- Arrays store collections of values.
+- Indexes start at zero.
+- `length` gives the array size.
+- Array methods simplify adding, removing, and searching for elements.
+- `slice()` and `splice()` behave differently: `slice()` leaves the original unchanged, while `splice()` modifies it.
