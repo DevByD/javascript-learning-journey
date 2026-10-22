@@ -632,7 +632,7 @@ console.log(square(5));
 - Function expressions store functions in variables.
 - Arrow functions provide concise syntax.
 
-# Day 6 — Arrays and Array Methods
+# # Day 6 — Arrays and Array Methods
 
 ## 1. Arrays
 
