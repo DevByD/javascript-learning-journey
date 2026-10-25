@@ -669,3 +669,63 @@ Use a `for` loop or `for...of` loop to process array elements.
 - `length` gives the array size.
 - Array methods simplify adding, removing, and searching for elements.
 - `slice()` and `splice()` behave differently: `slice()` leaves the original unchanged, while `splice()` modifies it.
+
+# Day 7 — Objects and Object Methods
+
+## 1. Objects
+
+Objects store related data using key-value pairs.
+
+```javascript
+const student = {
+    name: "Dharesh",
+    age: 21,
+    branch: "IoT"
+};
+```
+
+## 2. Accessing Properties
+
+- Dot notation: `student.name`
+- Bracket notation: `student["name"]`
+
+## 3. Modifying Objects
+
+- Update: `student.age = 22`
+- Add: `student.college = "Presidency University"`
+- Delete: `delete student.branch`
+
+## 4. Object Methods
+
+A method is a function defined as a property of an object.
+
+```javascript
+const person = {
+    name: "Dharesh",
+
+    introduce() {
+        return `Hello, I am ${this.name}`;
+    }
+};
+
+console.log(person.introduce());
+```
+
+## 5. The `this` Keyword
+
+In a method called through its object, `this` refers to that object. Arrow functions do not create their own `this`, so regular methods are generally clearer when you need the object's `this`.
+
+## 6. Built-in Object Methods
+
+- `Object.keys(object)`: returns an array of property names.
+- `Object.values(object)`: returns an array of property values.
+- `Object.entries(object)`: returns an array of key-value pairs.
+
+## Key Takeaways
+
+- Objects organize related information.
+- Properties store values.
+- Methods perform actions.
+- Dot and bracket notation access properties.
+- `this` can refer to the object calling a regular method.
+- Built-in Object methods help inspect object data.
