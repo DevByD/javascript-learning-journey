@@ -729,3 +729,52 @@ In a method called through its object, `this` refers to that object. Arrow funct
 - Dot and bracket notation access properties.
 - `this` can refer to the object calling a regular method.
 - Built-in Object methods help inspect object data.
+
+# Day 8 — Strings and String Methods
+
+## 1. Strings
+
+Strings represent text in JavaScript. They can be written using single quotes, double quotes, or backticks.
+
+```javascript
+const name = "Dharesh";
+const language = 'JavaScript';
+const message = `I am learning ${language}`;
+```
+
+## 2. String Length and Indexing
+
+- `length` returns the number of characters.
+- String indexing starts at `0`.
+- `text[0]` accesses the first character.
+- `text[text.length - 1]` accesses the last character.
+
+## 3. Template Literals
+
+Template literals use backticks and `${}` to insert variables and expressions into strings.
+
+```javascript
+const name = "Dharesh";
+console.log(`Hello ${name}!`);
+```
+
+## 4. Common String Methods
+
+- `toUpperCase()`: converts text to uppercase.
+- `toLowerCase()`: converts text to lowercase.
+- `trim()`: removes whitespace from both ends.
+- `includes()`: checks whether a substring exists.
+- `indexOf()`: returns the first matching index or `-1`.
+- `slice()`: extracts a portion of a string.
+- `replace()`: replaces the first matching occurrence.
+- `split()`: divides a string into an array.
+- `startsWith()`: checks the beginning of a string.
+- `endsWith()`: checks the end of a string.
+
+## Key Takeaways
+
+- Strings represent text.
+- Indexes start at zero.
+- Template literals make dynamic strings easier to read.
+- String methods return results without changing the original string.
+- `trim()` and `toLowerCase()` are useful when normalizing user input, such as email addresses.
